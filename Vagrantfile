@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "host2" do |host2|
     host2.vm.box = "generic/ubuntu2004"
-    host2.vm.hostname = "centos8"
+    host2.vm.hostname = "host2"
     host2.vm.network :private_network, ip: "192.168.20.11"
   end
 
